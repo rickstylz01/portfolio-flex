@@ -1,0 +1,142 @@
+/* Font Styles */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
+/*-- Structure --*/
+
+body {
+  background-color: mintcream;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+img.rounded {
+  border-radius: 8%;
+}
+
+main h2 {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: 'Lobster', cursive;
+}
+
+main h3 {
+  font-size: 22px;
+  font-family: 'Gotu', sans-serif;
+  font-weight: 400;
+}
+
+main p {
+  font-family: 'Epilogue', sans-serif;
+  line-height: 1.5em;
+  margin-bottom: 0em;
+}
+
+li {
+  font-family: 'Epilogue', sans-serif;
+  line-height: 1.5em;
+}
+
+/* unvisited link */
+a:link {
+  color: coral;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* Header */
+header {
+  background-image: url(images/blue-sky.jpg);
+  display: block;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  font-family: 'Lobster', cursive;
+  font-size: 56px;
+}
+
+/* Groups & Items (Mobile First) */
+
+.wrapper {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* Groups & Items (Desktop) */
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 100%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+/* Main */
+main .wrapper h2 {
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+main .intro {
+  font-size: 24px;
+  font-family: 'Gotu', sans-serif;
+}
+
+main .about {
+  font-size: 24px;
+}
+
+
+/* About Me Section*/
+#about {
+  background-color: black;
+  color: white;
+  padding: 20px 0 30px 0;
+}
+
+/* Contact Section */
+#contact {
+  background-color: black;
+  color: white;
+  padding: 20px 0 30px 0;
+}
+
+/* Article Sections */
+#home, #portfolio {
+  margin-bottom: 120px;
+}
+
+/* Footer */
+footer {
+  height: 84px;
+  background-image: url(images/blue-sky.jpg);
+}
